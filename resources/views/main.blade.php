@@ -23,7 +23,7 @@
     <div class="form-group">
        <div class="nav navbar-nav">
            <li> <a href="{{ route('login')}}">login</a></li>
-           <li> <a href=" {{ route('home')}}">register</a></li>
+           <li> <a href=" {{ route('register')}}">register</a></li>
         </div>    
     </div>
     
@@ -36,11 +36,11 @@
 <fieldset class="col-xs-5 ">
 
 <!-- Form Name -->
-<legend>Recherche d'un évènement sportif :</legend>
+       <legend>   Recherche d'un combat :</legend>
 
 <!-- Select Basic -->
 <div class="form-group">
-  <label class="col-xs-4 control-label" for="selectbasic">Sport :</label>
+  <label class="col-xs-2 control-label" for="selectbasic">Sport :</label>
   <div class="col-xs-4">
     <select id="selectbasic" name="selectbasic" class="form-control">
      <optgroup label="Sport de combat">
@@ -64,16 +64,29 @@
       </optgroup>
     </select>
   </div>
-</div>
+  <div>
+     <label class="col-xs-2 control-label" for="niveau">Niveau:</label>
+     <div class="col-xs-4">
+        <select id="niveau" name="niveau" class="form-control">
+            <option value="amateur">Amateur</option>
+            <option value="professionel">Professionel</option>
+            <option value="sparing_partner">spa ring partner</option>
+        </select> 
+      </div>
+  </div>    
+     
+      
+  </div>
+
     
      <div class="form-group">
-         <label class="col-xs-4 control-label" for="datepicker">Date :</label>
+         <label class="col-xs-2 control-label" for="datepicker">Date :</label>
          <div class="col-xs-4">
               <input type="text" id="datepicker" class="form-control">
          </div>
      </div>
      <div class="form-group">
-         <label class="col-xs-4 control-label" for="pays">Pays :</label>
+         <label class="col-xs-2 control-label" for="pays">Pays :</label>
          <div class="col-xs-4">
              <select id="pays" name="pays" class="form-control">
                <optgroup label="monde">
@@ -107,6 +120,10 @@
                   <option value="Tunisie">Tunisie</option>
                 </optgroup>
              </select>
+         </div>
+         <div class="col-xs-4">
+        
+             
          </div>
      </div>
 
