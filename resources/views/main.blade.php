@@ -20,11 +20,11 @@
     <ul class="nav navbar-nav">
       <li> <a href="{{ route('main')}}">Accueil</a> </li>
       <li> <a href="#">Liens</a> </li>
-      <li> <a href="#">Témoignages</a> </li>
-      <li> <a href="#">Profil</a> </li>
+      <li> <a href="#">Livre d'or</a> </li>
+     
     </ul>
     <div class="form-group">
-       <div class="nav navbar-nav">
+       <div class="nav navbar-nav pull-right">
                         @guest
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
@@ -35,6 +35,9 @@
                                 </a>
 
                                 <ul class="dropdown-menu">
+                                    <li><a href="#">Profil</a></li>
+                                       
+                                    
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
