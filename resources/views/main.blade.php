@@ -12,13 +12,16 @@
    </head>
     
     <body>
+    
+    <!-- navigation barre-->
+    
     <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <ul class="nav navbar-nav">
       <li> <a href="{{ route('main')}}">Accueil</a> </li>
       <li> <a href="#">Liens</a> </li>
       <li> <a href="#">Témoignages</a> </li>
-      <li> <a href="#">Références</a> </li>
+      <li> <a href="#">Profil</a> </li>
     </ul>
     <div class="form-group">
        <div class="nav navbar-nav">
@@ -29,17 +32,23 @@
     
   </div>
 </nav>
+ 
+    <!--background du module de recherche-->
   
   <div class="container jumbotron">
    
 <form class="form-horizontal" method="POST" action="">
-<fieldset class="col-xs-5 ">
+<div class="col-xs-6 ">
 
-<!-- Form Name -->
-       <legend>   Recherche d'un combat :</legend>
+<!-- titre module de recherche -->
+    <h3 class="text-center">   Recherche d'un combat :</h3>
 
-<!-- Select Basic -->
+<!-- 1er ligne recherche -->
+<div class="row">
+
 <div class="form-group">
+ 
+  
   <label class="col-xs-2 control-label" for="selectbasic">Sport :</label>
   <div class="col-xs-4">
     <select id="selectbasic" name="selectbasic" class="form-control">
@@ -73,18 +82,41 @@
             <option value="sparing_partner">spa ring partner</option>
         </select> 
       </div>
-  </div>    
+  </div> 
+ </div>   
      
       
-  </div>
+      </div>
+        
 
-    
-     <div class="form-group">
+    <div class="row">
+
+        <div class="form-group">
          <label class="col-xs-2 control-label" for="datepicker">Date :</label>
          <div class="col-xs-4">
               <input type="text" id="datepicker" class="form-control">
          </div>
+         <label class="col-xs-2 control-label" for="poids">Poids :</label>
+         <div class="col-xs-4">
+             <select id="poids" name="poids" class="form-control">
+                 <option value="&lt50kg">&LT 50kg</option>
+                 <option value="50_53kg">50 - 53KG</option>
+                 <option value="53_56kg">53 - 56kg</option>
+                 <option value="56_60Kg">56 - 60kg</option>
+                 <option value="60_66kg">60 - 66kg</option>
+                 <option value="66-69kg">66 - 69kg</option>
+                 <option value="69_73kg">69 - 73kg</option>
+                 <option value="73_76kg">73 - 76kg</option>
+                 <option value="76_79kg">76 - 79kg</option>
+                 <option value="79_85kg">79 - 85kg</option>
+                 <option value="85_91kg">85 - 91kg</option>
+                 <option value="&gt91kg">&gt 91kg</option>
+             </select>
+         </div>
      </div>
+    </div>
+     
+     <div class="row">
      <div class="form-group">
          <label class="col-xs-2 control-label" for="pays">Pays :</label>
          <div class="col-xs-4">
@@ -121,13 +153,32 @@
                 </optgroup>
              </select>
          </div>
-         <div class="col-xs-4">
+           
+           <label for="plan" class="control-label col-xs-2">plan:</label>
+           <div class="col-xs-4">
+           <select name="plan" id="plan" class="form-control">
+              <option value="paye">payé</option>
+              <option value="non_paye">non-payé</option>
+              
+           </select>
+        
         
              
-         </div>
+           </div>
+         </div> 
      </div>
 
-</fieldset>
+    
+    <!-- Button -->
+   <div class="row">    
+    <div class="form-group">
+     
+      <div class="col-xs-offset-3 col-xs-4">
+    <button id="submit1" name="submit1" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+   </div>
+ </div>
 </form>
  </div>
    
