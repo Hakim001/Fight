@@ -150,44 +150,114 @@
          <label class="col-xs-2 control-label" for="pays">Pays :</label>
          <div class="col-xs-4">
              <select id="pays" name="pays" class="form-control">
-               <optgroup label="monde">
+               <optgroup label="Monde">
                    <option value="monde">Monde entier</option>
                </optgroup>
                <optgroup label="Europe">
                 <option value="Europe">Europe</option>
-                <option value="Belgique" selected>Belgique</option>
-                <option value="France">France</option>
-                <option value="Pays-bas">Pays-bas</option>
-                <option value="Espagne">Espagne</option>
+                <option value="Albanie">Albanie</option>
                 <option value="Allemagne">Allemagne</option>
+                <option value="Autriche">Autriche</option>
+                <option value="Belgique" selected>Belgique</option>
+                <option value="Biélorussie">Biélorussie</option>
+                <option value="Bulgarie">Bulgarie</option>
+                <option value="Croatie">Croatie</option>
+                <option value="Danemark">Danemark</option>
+                <option value="Espagne">Espagne</option>
+				<option value="France">France</option>
+                <option value="Finlande">Finlande</option>
+                <option value="Grèce">Grèce</option>
                 <option value="Italie">Italie</option>
                 <option value="Irlande">Irlande</option>
-                <option value="UK">UK</option>
+                <option value="Islande">Islande</option>
+                <option value="Hongrie">Hongrie</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="Pays-bas">Pays-bas</option>
+                <option value="Pologhe">Pologne</option>
+                <option value="Portugal">Portugal</option>
+                
+                <option value="Suède">Suède</option>
                 <option value="Suisse">Suisse</option>
+                <option value="Roumanie">Roumanie</option>
+                <option value="Russie">Russie</option>
+                <option value="United_Kingdom">United Kingdom</option>
+                <option value="Ukraine">Ukraine</option>
                 </optgroup>
+                
                 <optgroup label="Moyen-orient">
                 <option value="Moyen-orient">Moyen-orient</option>
-                <option value="Russie">Russie</option>
-                <option value="Turquie">Turquie</option>
+                <option value="Arabie_saoudite">Arabie Saoudite</option>
+                <option value="Emirats_arabe">Emirat arabe unis</option>
                 <option value="Iran">Iran</option>
                 <option value="Jordanie">Jordanie</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Pakistan">Pakistan</option>
                 <option value="Syrie">Syrie</option>
+                <option value="Turquie">Turquie</option>
                 </optgroup>
-                <optgroup label="Maghreb">
+                
+                 <optgroup label="Maghreb">
                   <option value="Maghreb">Maghreb</option>
-                  <option value="Algerie">Algerie</option> 
-                  <option value="Maroc">Maroc</option>
+                  <option value="Algerie">Algerie</option>
+                  
                   <option value="Egypte">Egypte</option>
+                  <option value="Mali">Mali</option>
+                  <option value="Maroc">Maroc</option>
+                  <option value="Mauritanie">Mauritanie</option>
+                  <option value="Niger">Niger</option>
+                  <option value="Soudan">Soudan</option>
+                  <option value="Tchad">Tchad</option>
                   <option value="Tunisie">Tunisie</option>
+                  
+                </optgroup>
+                
+                <optgroup label="Asie">
+                	<option value="Chine">Chine</option>
+                	<option value="Corée_sudo">Corée du Sud</option>
+                	<option value="Inde">Inde</option>
+                	<option value="Indonesie">Indonésie</option>
+                	
+                	<option value="Japon">Japon</option>
+                	<option value="Kazakhstan">Kazakhstan</option>
+                	<option value="Malaisie">Malaisie</option>
+                	<option value="Mongolie">Mongolie</option>
+                	<option value="Phillippines">Phillippines</option>
+                	<option value="Thailande">Thailande</option>
+                	<option value="Vietnam">Vietnam</option>
+                </optgroup>
+                <optgroup label="Amérique">
+                   
+                    <option value="Argentine">Argentine</option>
+                    <option value="Bolivie">Bolivie</option>
+                    <option value="Bresil">Brésil</option>
+                	<option value="Canada">Canada</option>
+                	<option value="Chili">Chili</option>
+                	<option value="Colombie">Colombie</option>
+                	<option value="Cuba">Cuba</option>
+                	<option value="Equateur">Equateur</option>
+					<option value=Guyana>Guyana</option>
+					<option value=Guyanne_francaise>Guyanne française</option>
+                	<option value="Mexique">Mexique</option>
+                	<option value="Panama">Panama</option>
+                	<option value="Paraguay">Paraguay</option>
+                	<option value="Perou">Pérou</option>
+                	<option value="Porto_Rico">Porto Rico</option>
+                	<option value="Suriname">Suriname</option>
+                	<option value="Uruguay">Uruguay</option>
+                	<option value="USA">USA</option>
+                	<option value="Venezuela">Venezuela</option>
+                	
+                	
                 </optgroup>
              </select>
          </div>
            
-           <label for="plan" class="control-label col-xs-2">plan:</label>
+           <label for="plan" class="control-label col-xs-2">plan :</label>
            <div class="col-xs-4">
            <select name="plan" id="plan" class="form-control">
-              <option value="paye">payé</option>
               <option value="non_paye">non-payé</option>
+              <option value="paye">payé</option>
+              
               
            </select>
         
