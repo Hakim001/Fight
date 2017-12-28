@@ -35,7 +35,7 @@
                                 </a>
 
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Profil</a></li>
+                                    <li><a href=" {{ route('profil') }}">Your profil</a></li>
                                        
                                     
                                     <li>
@@ -58,6 +58,8 @@
     
   </div>
 </nav>
+
+<h1 class="text-center">Fight Club Connection</h1>
  
     <!--background du module de recherche-->
   
@@ -93,9 +95,10 @@
       <option value="jujitsu">Jujitsu</option>
       <option value="kung-fu">Kung-fu</option>
       <option value="taekwondo">Taekwondo</option>
+      <option value="judo">Judo</option>
      </optgroup>
       <optgroup label="épée">
-      <option value="escrime">Escrime</option>
+      <option value="Escrime">Escrime</option>
       </optgroup>
     </select>
   </div>
@@ -105,7 +108,7 @@
         <select id="niveau" name="niveau" class="form-control">
             <option value="amateur">Amateur</option>
             <option value="professionel">Professionel</option>
-            <option value="sparing_partner">spa ring partner</option>
+            <option value="sparing_partner">Spa-ring partner</option>
         </select> 
       </div>
   </div> 
