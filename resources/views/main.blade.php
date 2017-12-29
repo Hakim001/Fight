@@ -8,6 +8,7 @@
       <title>Fight main Sport</title>
       <link href="{{ asset('/css/app.css') }}"  rel="stylesheet">
       <link href="{{ asset('/jquery-ui/jquery-ui.min.css') }}" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="{{ asset('/datetimepicker/jquery.datetimepicker.css') }}"/>
       
    </head>
     
@@ -20,7 +21,7 @@
     <ul class="nav navbar-nav">
       <li> <a href="{{ route('main')}}">Accueil</a> </li>
       <li> <a href="#">Liens</a> </li>
-      <li> <a href="#">Livre d'or</a> </li>
+      <li> <a href="#">Boutique</a> </li>
      
     </ul>
     <div class="form-group">
@@ -123,7 +124,7 @@
         <div class="form-group">
          <label class="col-xs-2 control-label" for="datepicker">Date :</label>
          <div class="col-xs-4">
-              <input type="text" id="datepicker" class="form-control">
+              <input type="text" id="datetimepicker" class="form-control">
          </div>
          <label class="col-xs-2 control-label" for="poids">Poids :</label>
          <div class="col-xs-4">
@@ -264,7 +265,8 @@
         
              
            </div>
-         </div> 
+         </div>
+          
      </div>
 
     
@@ -274,6 +276,9 @@
      
       <div class="col-xs-offset-3 col-xs-4">
     <button id="submit1" name="submit1" class="btn btn-primary">Submit</button>
+      </div>
+      <div class="col-xs-offset-1 col-xs-3">
+      	<a href="" class="btn btn-link">Une recherche avancée</a>
       </div>
     </div>
    </div>
@@ -285,10 +290,11 @@
     
     
     <script src="{{ asset('/jquery-ui/jquery-ui.min.js') }}"></script>
+    <script src="{{ asset('/datetimepicker/build/jquery.datetimepicker.full.min.js') }}"></script>
   <script>
-  $(function() {
-    $( "#datepicker").datepicker();
-  });
+  
+   jQuery('#datetimepicker').datetimepicker();
+
 </script>
   </body>
 </html>

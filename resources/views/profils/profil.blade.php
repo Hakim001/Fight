@@ -10,6 +10,7 @@
         <link href="{{ asset('/jquery-ui/jquery-ui.min.css') }}" rel="stylesheet">
         <!-- Magnific Popup core CSS file -->
          <link rel="stylesheet" href="{{ asset('magnific-popup/dist/magnific-popup.css') }}">
+         <link  href="{{ asset('/fotorama/src/scss/fotorama.scss') }}" rel="stylesheet">
 
         <style>
 			#open-popup {padding:20px}
@@ -23,8 +24,39 @@
          margin: 20px auto;
          text-align: center;
                }
+			<style type="text/css">
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
 
-		</style>
+    .fotorama__html {
+      font-family: sans-serif;
+      font-size: 64px;
+      font-size: 40vw;
+      line-height: 1;
+      text-align: center;
+      display: table-row;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+    }
+
+    .fotorama__html > div {
+      position: relative;
+      top: 50%;
+      margin-top: -.5em;
+    }
+
+    .fotorama .fotorama__dot {
+      border-color: #000;
+    }
+
+    .fotorama .fotorama__active .fotorama__dot {
+      background-color: #000;
+    }
+  </style>
+
+	
     
     </head>
     <body>
@@ -78,14 +110,26 @@
 
 <div id="my-popup" class="mfp-hide white-popup">
   Inline popup
-</div>
+		</div> <br/>
+        
+      <div class="fotorama">
+      	<img src="fotorama/test/i/okonechnikov/image/1-lo.jpg" width="250" heigth="250"/>
+      	<img src="fotorama/test/i/okonechnikov/image/2-lo.jpg" width="250" heigth="250"/>
+      	<img src="fotorama/test/i/okonechnikov/image/3-lo.jpg" width="250" heigth="250"/>
+      	
+      	<img src="fotorama/test/i/okonechnikov/image/4-lo.jpg" width="250" heigth="250"/>
+      	<img src="fotorama/test/i/okonechnikov/image/5-lo.jpg" width="250" heigth="250"/>
+      </div>  
 
         
       <script src="{{ asset('/js/app.js') }}"></script>
       <script src="{{ asset('/jquery.min.js') }}"></script>
     
-    
-   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="../product/fotorama.js"></script>
+  
+    <script src="{{ asset('/fotorama/src/js/fotorama.js') }}"></script>
+
 
     <!-- Magnific Popup core JS file -->
      <script src="{{ asset('/magnific-popup/dist/jquery.magnific-popup.js') }}"></script>
@@ -123,7 +167,16 @@
     type: 'image' // this is a default type
 });
 	</script>
-        
+       
+         <script type="text/javascript">
+    $(function () {
+      $('.fotorama')
+          .on('fotorama:ready', function (e, fotorama) {
+            fotorama.show({index: 2, time: 0});
+          })
+          .fotorama();
+    })
+  </script>
         
         
     </body>
