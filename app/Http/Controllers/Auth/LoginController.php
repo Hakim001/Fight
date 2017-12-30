@@ -25,7 +25,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/main1';
+    protected $redirectTo = '/main';
 
     /**
      * Create a new controller instance.
@@ -40,6 +40,6 @@ class LoginController extends Controller
     public function logout()
     {
         \Auth::logout();
-        return view('main1');
+        return view('main.main');
     }
 }

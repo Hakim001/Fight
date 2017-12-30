@@ -15,9 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/main', function () {
-    return view('main');
-})->name('main');
+//Route::get('/main', function () {
+ //   return view('main');
+//})->name('main');
+
+Route::get('/contact', 'mainController@contact')->name('contact');
 
 Route::get('/main1', 'mainController@index')->name('main1');
 
@@ -26,3 +28,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/profil', 'profilController@profil')->name('profil')->middleware('auth');
+
+Route::get('/main', 'mainController@index2')->name('main');

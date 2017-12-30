@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Fight Club Connection</title>
+  <title>Fight Club Connection Sport combat Art martiaux Compétition</title>
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="{{ asset('/homepage_v1/css/style.css') }}">
