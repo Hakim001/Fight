@@ -9,7 +9,9 @@
       <link href="{{ asset('/css/app.css') }}"  rel="stylesheet">
       <link href="{{ asset('/jquery-ui/jquery-ui.min.css') }}" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="{{ asset('/datetimepicker/jquery.datetimepicker.css') }}"/>
-      <link rel="stylesheet" href="{{ asset('/css/contact.css') }}">
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="{{ asset('/css/footer.css') }}">
+      
       
       
    </head>
@@ -69,69 +71,82 @@
   @yield('recherche')
    @yield('contact')
     
-    <footer id="footer">
+  
+<div class="footer-section">
+    <div class="footer">
+	<div class="container">
+	        <div class="col-md-4 footer-four">
+		       <h5>Contact Us</h5>
+		       <p>Feel free to reach us</p>
+		         <div class="foot-address">
+		          <ul>
+                    <li><i class="fa fa-map-marker"></i>Place rouppe 234 1000 Bruxelles </li>
+                    <li><i class="fa fa-envelope-o"></i>Fightclubconnection@gmail.com </li>
+					  <li><i class="fa fa-phone"></i>+32 (0)2 821 65 87 </li>
+                    
+                  </ul>
+                 </div> 
+		    </div>
+		   
+		    <div class="col-md-3 footer-two">
+		       <h5>Quick Links</h5>
+		          <ul>
+                    <li><a href="#"> About Us</a> </li>
+                    <li><a href="#"> Our News</a> </li>
+                    <li><a href="#"> Our Services</a> </li>
+                    <li><a href="#"> Contact Us</a> </li>
+                  </ul>
+                  
+		    </div>
+		    <div class="col-md-3 footer-three">
+		       <h5>Services</h5>
+		          <ul>
+                    <li><a href="#"> About Us</a> </li>
+                    <li><a href="#"> Our News</a> </li>
+                    <li><a href="#"> Our Services</a> </li>
+                    <li><a href="#"> Contact Us</a> </li>
+                  </ul>
+                  
+		    </div>
+		    <div class="col-md-2 footer-one">
+		       <h5>Services</h5>
+		          <ul>
+                    <li><a href="#"> About Us</a> </li>
+                    <li><a href="#"> Our News</a> </li>
+                    <li><a href="#"> Our Services</a> </li>
+                    <li><a href="#"> Contact Us</a> </li>
+                  </ul>
+                  
+		    </div>
+		    
+		
+		
+		
+		
+		
+		<div class="clearfix"></div>
+	</div>
+</div>
 
-    <!-- Start Footer-Top -->
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 logo-footer">
-            <img src="img/logo-footer.png" alt="" class="img-responsive">
-          </div>
-          <div class="col-md-4 widget widget-about">
-            <h5 class="title">
-              About Us
-            </h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Etiam sit amet lectus quis est congue mollis.</p>
-          </div>
-          <div class="col-md-4 widget widget-news">
-            <h5 class="title">
-              Latest News
-            </h5>
-            <ul class="custom-list">
-              <li><a href="#">Lorem ipsum dolor</a></li>
-              <li><a href="#">Proin nibh augue suscipit scelerisque</a></li>
-              <li><a href="#">Etiam pellentesque aliquet tellus</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4 widget widget-newsletter">
-            <h5 class="title">
-              Newsletter
-            </h5>
-            <form action="#" class="default-form">
-              <input type="text" placeholder="Your email">
-              <button class="btn btn-transparent pull-right">Sign Up</button>
-            </form>
-            <div class="social">
-              <h5 class="title pull-left">
-                Stay in touch
-              </h5>
-              <ul class="custom-list list-inline pull-right">
-                <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+</div>
+<div class="footer-bottom">
+        <div class="container">
+					<div class="row">
+						<div class="col-sm-6 ">
+							<div class="copyright-text">
+								<p>CopyRight © 2017 Digital All Rights Reserved</p>
+							</div>
+						</div> <!-- End Col -->
+						<div class="col-sm-6  ">
+						    <div class="copyright-text pull-right">
+								<p> <a href="#">Home</a> | <a href="#">Privacy</a> |<a href="#">Terms & Conditions</a> | <a href="#">Refund Policy</a> </p>
+							</div>					
+													
+						</div> <!-- End Col -->
+					</div>
+				</div>
     </div>
-    <!-- End Footer-Top -->
-
-    <!-- Start Footer-Copyrights -->
-    <div class="footer-copyrights">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p class=text-center>Copyright 2017 © Fight Club Connection. All rights reserved. Powered by S.H</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Footer-Copyrights -->
-
-  </footer>
-   
+		
     <script src="{{ asset('/js/app.js') }}"></script>
     
     
