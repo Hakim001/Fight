@@ -12,6 +12,18 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet" href="{{ asset('/css/footer.css') }}">
       
+      <style>
+		  
+		  #titre {
+			  color: black;
+			  font-style: italic;
+			  text-decoration: underline;
+			  text-decoration-color: chocolate;
+			  color: chocolate;
+		  }
+		  
+	   </style>
+      
       
       
    </head>
@@ -65,7 +77,7 @@
   </div>
 </nav>
 
-<h1 class="text-center titre-principal" style="color: black;">Fight Club Connection.</h1>
+<h1 id="titre" class="text-center titre-principal">Fight Club Connection.</h1>
  
     <!--background du module de recherche-->
   @yield('recherche')

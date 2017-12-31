@@ -15,6 +15,20 @@
     <li data-target="#carousel" data-slide-to="1"></li>
     <li data-target="#carousel" data-slide-to="2"></li>
     <li data-target="#carousel" data-slide-to="3"></li>
+    <li data-target="#carousel" data-slide-to="4"></li>
+    <li data-target="#carousel" data-slide-to="5"></li>
+    <li data-target="#carousel" data-slide-to="6"></li>
+    <li data-target="#carousel" data-slide-to="7"></li>
+    <li data-target="#carousel" data-slide-to="8"></li>
+    <li data-target="#carousel" data-slide-to="9"></li>
+    <li data-target="#carousel" data-slide-to="10"></li>
+    <li data-target="#carousel" data-slide-to="11"></li>
+    <li data-target="#carousel" data-slide-to="12"></li>
+    <li data-target="#carousel" data-slide-to="13"></li>
+    <li data-target="#carousel" data-slide-to="14"></li>
+    <li data-target="#carousel" data-slide-to="15"></li>
+    <li data-target="#carousel" data-slide-to="16"></li>
+    <li data-target="#carousel" data-slide-to="17"></li>
   </ol>
   
   
@@ -252,6 +266,21 @@
     <div class="item"> <img alt="" src=" {{ asset('/photo/Boxe_amateur.jpg') }}"></div>
     <div class="item"> <img alt="" src=" {{ asset('/photo/Boxe_anglaise.jpg') }}"></div>
     <div class="item"> <img alt="" src=" {{ asset('/photo/Escrime.jpg') }}"></div>
+    <div class="item"> <img alt="" src=" {{ asset('/photo/Boxe_thai.jpg') }}"></div>
+    <div class="item"> <img alt="" src=" {{ asset('/photo/Cage.jpg') }}"></div>
+    <div class="item"> <img alt="" src=" {{ asset('/photo/Girls_training.jpg') }}"></div>
+    <div class="item"> <img alt="" src=" {{ asset('/photo/Judo2.jpg') }}"></div>
+    <div class="item"> <img alt="" src=" {{ asset('/photo/Karate.jpg') }}"></div>
+    <div class="item"> <img alt="" src=" {{ asset('/photo/Maywaether_Mcgregor.jpg') }}"></div>
+    <div class="item"> <img alt="" src=" {{ asset('/photo/Taekwondo1.jpg') }}"></div>
+    <div class="item"> <img alt="" src=" {{ asset('/photo/Symbole_muay_thai.jpg') }}"></div>
+    <div class="item"> <img alt="" src=" {{ asset('/photo/MMA_Girls.jpg') }}"></div>
+    <div class="item"> <img alt="" src=" {{ asset('/photo/Lutte.jpg') }}"></div>
+    <div class="item"> <img alt="" src=" {{ asset('/photo/Taekwondo2.jpg') }}"></div>
+    <div class="item"> <img alt="" src=" {{ asset('/photo/Krav_maga.jpg') }}"></div>
+    <div class="item"> <img alt="" src=" {{ asset('/photo/Judo1.jpg') }}"></div>
+    <div class="item"> <img alt="" src=" {{ asset('/photo/Karate2.jpg') }}"></div>
+    
   </div>
   <a class="left carousel-control" href="#carousel" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
