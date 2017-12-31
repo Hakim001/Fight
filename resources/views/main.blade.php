@@ -69,9 +69,12 @@
            
         </div>    
     </div>
+    <br/>
     
   </div>
 </nav>
+<br/>
+<br/>
 
 <h1 id="titre" class="text-center titre-principal">Fight Club Connection.</h1>
  
