@@ -13,6 +13,11 @@ h1,h2,h3 {
 	letter-spacing:1px;
 }
 
+#h3footer {
+	color:darkmagenta;
+	font-style:oblique;
+}
+
 p{
 	margin:0 0 25px;
 	font-size:18px;
@@ -34,4 +39,18 @@ a:hover,a:focus{
 
 textarea.form-control{
     height:100px;
+}
+
+#facebook
+{
+	color: dodgerblue;
+}
+
+#twitter {
+	color: darkblue;
+}
+
+#youtube {
+	color: red;
+	
 }
