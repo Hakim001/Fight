@@ -11,18 +11,11 @@
       <link rel="stylesheet" type="text/css" href="{{ asset('/datetimepicker/jquery.datetimepicker.css') }}"/>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet" href="{{ asset('/css/footer.css') }}">
+      <link rel="stylesheet" href="{{ asset('/css/main.css') }}">
+      <link href="https://fonts.googleapis.com/css?family=Oswald:700|Patua+One|Roboto+Condensed:700" rel="stylesheet">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
       
-      <style>
-		  
-		  #titre {
-			  color: black;
-			  font-style: italic;
-			  text-decoration: underline;
-			  text-decoration-color: chocolate;
-			  color: chocolate;
-		  }
-		  
-	   </style>
+      
       
       
       
@@ -34,6 +27,9 @@
     
     <nav class="navbar navbar-inverse">
   <div class="container-fluid">
+   <div class="navbar-header">
+    <a class="navbar-brand" href="#">Fight Club Connection</a>
+  </div>
     <ul class="nav navbar-nav">
       <li> <a href="{{ route('main')}}">Accueil</a> </li>
       <li> <a href="#">Liens</a> </li>

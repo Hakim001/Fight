@@ -1,44 +1,11 @@
-
-  
 @extends('main')
 
-@section('carrousel')
+
+@section('recherche')
 
 
-
-
-
-
-<div id="carousel" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carousel" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel" data-slide-to="1"></li>
-    <li data-target="#carousel" data-slide-to="2"></li>
-    <li data-target="#carousel" data-slide-to="3"></li>
-    <li data-target="#carousel" data-slide-to="4"></li>
-    <li data-target="#carousel" data-slide-to="5"></li>
-    <li data-target="#carousel" data-slide-to="6"></li>
-    <li data-target="#carousel" data-slide-to="7"></li>
-    <li data-target="#carousel" data-slide-to="8"></li>
-    <li data-target="#carousel" data-slide-to="9"></li>
-    <li data-target="#carousel" data-slide-to="10"></li>
-    <li data-target="#carousel" data-slide-to="11"></li>
-    <li data-target="#carousel" data-slide-to="12"></li>
-    <li data-target="#carousel" data-slide-to="13"></li>
-    <li data-target="#carousel" data-slide-to="14"></li>
-    <li data-target="#carousel" data-slide-to="15"></li>
-    <li data-target="#carousel" data-slide-to="16"></li>
-    <li data-target="#carousel" data-slide-to="17"></li>
-  </ol>
   
-  
- 
-
-  <div class="carousel-inner">
-    <div class="carousel-caption">
-  <h1 class="text-center titre-principal" style="color: green;">Fight Club Connection.</h1>
-  <div class="container">
-  
+  <div class="container jumbotron">
    
 <form class="form-horizontal" method="POST" action="">
 <div class="col-xs-6 ">
@@ -83,8 +50,7 @@
         <select id="niveau" name="niveau" class="form-control">
             <option value="amateur">Amateur</option>
             <option value="professionel">Professionel</option>
-            <option value="sparing_partner_pro">Spa-ring partner pro</option>
-            <option value="sparing_partner_amateur">Spa-ring partner amateur</option>
+            <option value="sparing_partner">Spa-ring partner</option>
         </select> 
       </div>
   </div> 
@@ -260,41 +226,7 @@
  </div>
 </form>
  </div>
-	</div>
  
-    <div class="item active"> <img alt="" src=" {{ asset('/photo/Aikido.jpg') }}"></div>
-    <div class="item"> <img alt="" src=" {{ asset('/photo/Boxe_amateur.jpg') }}"></div>
-    <div class="item"> <img alt="" src=" {{ asset('/photo/Boxe_anglaise.jpg') }}"></div>
-    <div class="item"> <img alt="" src=" {{ asset('/photo/Escrime.jpg') }}"></div>
-    <div class="item"> <img alt="" src=" {{ asset('/photo/Boxe_thai.jpg') }}"></div>
-    <div class="item"> <img alt="" src=" {{ asset('/photo/Cage.jpg') }}"></div>
-    <div class="item"> <img alt="" src=" {{ asset('/photo/Girls_training.jpg') }}"></div>
-    <div class="item"> <img alt="" src=" {{ asset('/photo/Judo2.jpg') }}"></div>
-    <div class="item"> <img alt="" src=" {{ asset('/photo/Karate.jpg') }}"></div>
-    <div class="item"> <img alt="" src=" {{ asset('/photo/Maywaether_Mcgregor.jpg') }}"></div>
-    <div class="item"> <img alt="" src=" {{ asset('/photo/Taekwondo1.jpg') }}"></div>
-    <div class="item"> <img alt="" src=" {{ asset('/photo/Symbole_muay_thai.jpg') }}"></div>
-    <div class="item"> <img alt="" src=" {{ asset('/photo/MMA_Girls.jpg') }}"></div>
-    <div class="item"> <img alt="" src=" {{ asset('/photo/Lutte.jpg') }}"></div>
-    <div class="item"> <img alt="" src=" {{ asset('/photo/Taekwondo2.jpg') }}"></div>
-    <div class="item"> <img alt="" src=" {{ asset('/photo/Krav_maga.jpg') }}"></div>
-    <div class="item"> <img alt="" src=" {{ asset('/photo/Judo1.jpg') }}"></div>
-    <div class="item"> <img alt="" src=" {{ asset('/photo/Karate2.jpg') }}"></div>
-    
-  </div>
-  <a class="left carousel-control" href="#carousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-
- 
-</div>
-
-<script src="{{ asset('/jquery.min.js') }}"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- 
- 
-
 @endsection
+
+
