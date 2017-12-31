@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Tema desarrollada por Estela Silva. Desarrolladora Web -->
+  <title>Desarrollador Web. Plantillas. Sitio web adaptables</title>
+  <meta name="description" content="Desarrollador web con amplia experiencia, desarrollo de plantillas, joomla!, wordpress, sitios web" />
+  <meta name="keywords" content="plantillas,sitios web, páginas web,wordpress, joomla" />
+  <meta name="author" content="Estela Silva H." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

@@ -30,3 +30,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/profil', 'profilController@profil')->name('profil')->middleware('auth');
 
 Route::get('/main', 'mainController@index2')->name('main');
+
+Route::get('/test', 'mainController@test')->name('test');

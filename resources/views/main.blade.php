@@ -9,7 +9,7 @@
       <link href="{{ asset('/css/app.css') }}"  rel="stylesheet">
       <link href="{{ asset('/jquery-ui/jquery-ui.min.css') }}" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="{{ asset('/datetimepicker/jquery.datetimepicker.css') }}"/>
-      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet" href="{{ asset('/css/footer.css') }}">
       
       
@@ -65,11 +65,12 @@
   </div>
 </nav>
 
-<h1 class="text-center titre-principal" style="color: navy;">Fight Club Connection.</h1>
+<h1 class="text-center titre-principal" style="color: black;">Fight Club Connection.</h1>
  
     <!--background du module de recherche-->
   @yield('recherche')
    @yield('contact')
+   @yield('carrousel')
     
   
 <div class="footer-section">
@@ -152,7 +153,9 @@
     
     <script src="{{ asset('/jquery-ui/jquery-ui.min.js') }}"></script>
     <script src="{{ asset('/datetimepicker/build/jquery.datetimepicker.full.min.js') }}"></script>
-  <script>
+      
+    <script>
+	  
   
    jQuery('#datetimepicker').datetimepicker();
 

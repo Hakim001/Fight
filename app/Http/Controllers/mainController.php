@@ -20,4 +20,9 @@ class mainController extends Controller
 		
 		return view('main.main');
 	}
+	
+	public function test() {
+		
+		return view('main.maintest');
+	}
 }
