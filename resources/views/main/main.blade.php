@@ -346,6 +346,112 @@
         
              
            </div>
+           <label for="taille" class="control-label col-md-1">taille :</label>
+           <div class="col-md-2">
+           	<select name="taille" id="taille" class="form-control">
+           	    <option value="&lt 1.30">&lt 1,30</option>
+           		<option value="1.30">1,30</option>
+           		<option value="1.31">1,31</option>
+           		<option value="1.32">1,32</option>
+           		<option value="1.33">1,33</option>
+           		<option value="1.34">1,34</option>
+           		<option value="1.35">1,35</option>
+           		<option value="1.36">1,36</option>
+           		<option value="1.37">1,37</option>
+           		<option value="1.38">1,38</option>
+           		<option value="1.39">1,39</option>
+           		<option value="1.40">1,40</option>
+           		<option value="1.41">1,41</option>
+           		<option value="1.42">1,42</option>
+           		<option value="1.43">1,43</option>
+           		<option value="1.44">1,44</option>
+           		<option value="1.45">1,45</option>
+           		<option value="1.46">1,46</option>
+           		<option value="1.47">1,47</option>
+           		<option value="1.48">1,48</option>
+           		<option value="1.49">1,49</option>
+           		<option value="1.50">1,50</option>
+           		<option value="1.51">1,51</option>
+           		<option value="1.52">1,52</option>
+           		<option value="1.53">1,53</option>
+           		<option value="1.54">1,54</option>
+				<option value="1.55">1,55</option>
+				<option value="1.56">1,56</option>
+				<option value="1.57">1,57</option>
+				<option value="1.58">1,58</option>
+				<option value="1.59">1,59</option>
+				<option value="1.60">1,60</option>
+				<option value="1.61">1,61</option>
+				<option value="1.62">1,62</option>
+				<option value="1.63">1,63</option>
+				<option value="1.64">1,64</option>
+				<option value="1.65">1,65</option>
+				<option value="1.66">1,66</option>
+				<option value="1.67">1,67</option>
+				<option value="1.68">1,68</option>
+				<option value="1.69">1,69</option>
+				<option value="1.70">1,70</option>
+				<option value="1.71">1,71</option>
+				<option value="1.72">1,72</option>
+				<option value="1.73">1,73</option>
+				<option value="1.74">1,74</option>
+				<option value="1.75">1,75</option>
+				<option value="1.76">1,76</option>
+				<option value="1.77" selected>1,77</option>
+				<option value="1.78">1,78</option>
+				<option value="1.79">1,79</option>
+				<option value="1.80">1,80</option>
+          		<option value="1.81">1,81</option>
+          		<option value="1.82">1,82</option>
+          		<option value="1.83">1,83</option>
+          		<option value="1.84">1,84</option>
+          		<option value="1.85">1,85</option>
+          		<option value="1.86">1,86</option>
+          		<option value="1.87">1,87</option>
+          		<option value="1.88">1,88</option>
+          		<option value="1.89">1,89</option>
+          		<option value="1.90">1,90</option>
+          		<option value="1.91">1,91</option>
+          		<option value="1.92">1,92</option>
+          		<option value="1.93">1,93</option>
+          		<option value="1.94">1,94</option>
+          		<option value="1.95">1,95</option>
+          		<option value="1.96">1,96</option>
+          		<option value="1.97">1,97</option>
+          		<option value="1.98">1,98</option>
+          		<option value="1.99">1,99</option>
+          		<option value="2.00">2,00</option>
+          		<option value="2.01">2,01</option>
+          		<option value="2.02">2,02</option>
+          		<option value="2.03">2,03</option>
+          		<option value="2.04">2,04</option>
+				<option value="2.05">2,05</option>
+          		<option value="2.06">2,06</option>
+          		<option value="2.07">2,07</option>
+          		<option value="2.10">2,10</option>
+          		<option value="2.11">2,11</option>
+          		<option value="2.12">2,12</option>
+          		<option value="2.13">2,13</option>
+          		<option value="2.14">2,14</option>
+          		<option value="2.15">2,15</option>
+          		<option value="2.16">2,16</option>
+          		<option value="2.17">2,17</option>
+          		<option value="2.18">2,18</option>
+          		<option value="2.19">2,19</option>
+          		<option value="2.20">2,20</option>
+          		<option value="2.21">2,21</option>
+          		<option value="2.22">2,22</option>
+          		<option value="2.23">2,23</option>
+          		<option value="2.24">2,24</option>
+          		<option value="2.25">2,25</option>
+          		<option value="2.26">2,26</option>
+          		<option value="2.27">2,27</option>
+          		<option value="2.28">2,28</option>
+          		<option value="&gt 2.28">&gt 2,28</option>
+          		
+           		
+           	</select>
+           </div>
          
           
      </div>
@@ -401,6 +507,8 @@
    
   
  
+ 
+	 
   <div class="container visible-sm visible-xs">
   
    
@@ -423,6 +531,7 @@
       <option value="anglaise">Boxe Anglaise</option>
       <option value="thai">Boxe Thai</option>
       <option value="française">Boxe Française</option>
+      <option value="catch">Catch</option>
       <option value="lutte">Lutte</option>
       <option value="kicboxing">Kickboxing</option>
       <option value="mma">M.M.A</option>
@@ -432,12 +541,19 @@
       <option value"krav maga">Krav Maga</option>
       <option value="aïkido">Aïkido</option>
       <option value="jujitsu">Jujitsu</option>
+      <option value="karate">Karate</option>
       <option value="kung-fu">Kung-fu</option>
       <option value="taekwondo">Taekwondo</option>
       <option value="judo">Judo</option>
      </optgroup>
       <optgroup label="épée">
       <option value="Escrime">Escrime</option>
+      </optgroup>
+      <optgroup label="Bonus">
+      	<option value="tennis">Tennis</option>
+      	<option value="squash">Squash</option>
+      	<option value="badminton">Badminton</option>
+      	<option value="golf">Golf</option>
       </optgroup>
     </select>
   </div>
@@ -464,7 +580,7 @@
   			<option value="17">17</option>
   			<option value="18">18</option>
   			<option value="19">19</option>
-  			<option value="20">20</option>
+  			<option value="20" selected>20</option>
   			<option value="21">21</option>
   			<option value="22">22</option>
   			<option value="23">23</option>
@@ -498,7 +614,7 @@
   			<option value="51">51</option>
   			<option value="52">52</option>
   			<option value="53">53</option>
-  			<option value="54">64</option>
+  			<option value="54">54</option>
   			<option value="55">55</option>
   			<option value="56">56</option>
   			<option value="57">57</option>
@@ -571,10 +687,23 @@
         <label class="col-md-1 control-label" for="pays">Pays :</label>
          <div class="col-md-2">
              <select id="pays" name="pays" class="form-control">
-               <optgroup label="Monde">
+               <optgroup label="Monde" style="color:red;">
                    <option value="monde">Monde entier</option>
                </optgroup>
-               <optgroup label="Europe">
+               <optgroup label="les plus populaire" style="color:blue;">
+               <option value="Allemagne">Allemagne</option>
+               <option value="Belgique" selected>Belgique</option>
+               <option value="Canada">Canada</option>
+               <option value="Espagne">Espagne</option>
+               <option value="France">France</option>
+               <option value="Luxembourg">Luxembourg</option>
+               <option value="Pays-bas">Pays-bas</option>
+               <option value="Suisse">Suisse</option>
+               <option value="United_Kingdom">United Kingdom</option>
+               <option value="USA">USA</option>
+               	
+               </optgroup>
+               <optgroup label="Europe"style="color:orange;">
                 <option value="Europe">Europe</option>
                 <option value="Albanie">Albanie</option>
                 <option value="Allemagne">Allemagne</option>
@@ -605,10 +734,11 @@
                 <option value="Ukraine">Ukraine</option>
                 </optgroup>
                 
-                <optgroup label="Moyen-orient">
+                <optgroup label="Moyen-orient"style="color:grey;">
                 <option value="Moyen-orient">Moyen-orient</option>
                 <option value="Arabie_saoudite">Arabie Saoudite</option>
                 <option value="Emirats_arabe">Emirat arabe unis</option>
+                <option value="Irak">Irak</option>
                 <option value="Iran">Iran</option>
                 <option value="Jordanie">Jordanie</option>
                 <option value="Qatar">Qatar</option>
@@ -617,7 +747,7 @@
                 <option value="Turquie">Turquie</option>
                 </optgroup>
                 
-                 <optgroup label="Maghreb">
+                 <optgroup label="Maghreb" style="color:black;">
                   <option value="Maghreb">Maghreb</option>
                   <option value="Algerie">Algerie</option>
                   
@@ -632,7 +762,7 @@
                   
                 </optgroup>
                 
-                <optgroup label="Asie">
+                <optgroup label="Asie" style="color:green;">
                 	<option value="Chine">Chine</option>
                 	<option value="Corée_sudo">Corée du Sud</option>
                 	<option value="Inde">Inde</option>
@@ -646,7 +776,7 @@
                 	<option value="Thailande">Thailande</option>
                 	<option value="Vietnam">Vietnam</option>
                 </optgroup>
-                <optgroup label="Amérique">
+                <optgroup label="Amérique" style="color:blue;">
                    
                     <option value="Argentine">Argentine</option>
                     <option value="Bolivie">Bolivie</option>
@@ -707,6 +837,7 @@
 </form>
  </div>
 	
+ 
 
 
  

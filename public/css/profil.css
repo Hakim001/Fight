@@ -1,0 +1,26 @@
+
+
+
+body{
+	
+	font-family: 'Roboto Condensed', sans-serif;
+	
+}
+
+
+
+
+
+
+#titre {
+	
+	font-family: 'Patua One', cursive;
+	text-transform: uppercase;
+	letter-spacing:1px;
+	color: darkslateblue;
+	text-decoration: underline;
+	text-decoration-color: brown;
+	font-style: italic;
+	font-weight: bolder;
+	font-size: 5em;
+}

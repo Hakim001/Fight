@@ -82,6 +82,7 @@
   @yield('recherche')
    @yield('contact')
    @yield('carrousel')
+   @yield('profil')
     
   
 <div class="footer-section">
