@@ -62,6 +62,7 @@
       <option value="anglaise">Boxe Anglaise</option>
       <option value="thai">Boxe Thai</option>
       <option value="française">Boxe Française</option>
+      <option value="catch">Catch</option>
       <option value="lutte">Lutte</option>
       <option value="kicboxing">Kickboxing</option>
       <option value="mma">M.M.A</option>
@@ -71,12 +72,19 @@
       <option value"krav maga">Krav Maga</option>
       <option value="aïkido">Aïkido</option>
       <option value="jujitsu">Jujitsu</option>
+      <option value="karate">Karate</option>
       <option value="kung-fu">Kung-fu</option>
       <option value="taekwondo">Taekwondo</option>
       <option value="judo">Judo</option>
      </optgroup>
       <optgroup label="épée">
       <option value="Escrime">Escrime</option>
+      </optgroup>
+      <optgroup label="Bonus">
+      	<option value="tennis">Tennis</option>
+      	<option value="squash">Squash</option>
+      	<option value="badminton">Badminton</option>
+      	<option value="golf">Golf</option>
       </optgroup>
     </select>
   </div>
@@ -103,7 +111,7 @@
   			<option value="17">17</option>
   			<option value="18">18</option>
   			<option value="19">19</option>
-  			<option value="20">20</option>
+  			<option value="20" selected>20</option>
   			<option value="21">21</option>
   			<option value="22">22</option>
   			<option value="23">23</option>
@@ -137,7 +145,7 @@
   			<option value="51">51</option>
   			<option value="52">52</option>
   			<option value="53">53</option>
-  			<option value="54">64</option>
+  			<option value="54">54</option>
   			<option value="55">55</option>
   			<option value="56">56</option>
   			<option value="57">57</option>
@@ -210,10 +218,23 @@
         <label class="col-md-1 control-label" for="pays">Pays :</label>
          <div class="col-md-2">
              <select id="pays" name="pays" class="form-control">
-               <optgroup label="Monde">
+               <optgroup label="Monde" style="color:red;">
                    <option value="monde">Monde entier</option>
                </optgroup>
-               <optgroup label="Europe">
+               <optgroup label="les plus populaire" style="color:blue;">
+               <option value="Allemagne">Allemagne</option>
+               <option value="Belgique" selected>Belgique</option>
+               <option value="Canada">Canada</option>
+               <option value="Espagne">Espagne</option>
+               <option value="France">France</option>
+               <option value="Luxembourg">Luxembourg</option>
+               <option value="Pays-bas">Pays-bas</option>
+               <option value="Suisse">Suisse</option>
+               <option value="United_Kingdom">United Kingdom</option>
+               <option value="USA">USA</option>
+               	
+               </optgroup>
+               <optgroup label="Europe"style="color:orange;">
                 <option value="Europe">Europe</option>
                 <option value="Albanie">Albanie</option>
                 <option value="Allemagne">Allemagne</option>
@@ -244,10 +265,11 @@
                 <option value="Ukraine">Ukraine</option>
                 </optgroup>
                 
-                <optgroup label="Moyen-orient">
+                <optgroup label="Moyen-orient"style="color:grey;">
                 <option value="Moyen-orient">Moyen-orient</option>
                 <option value="Arabie_saoudite">Arabie Saoudite</option>
                 <option value="Emirats_arabe">Emirat arabe unis</option>
+                <option value="Irak">Irak</option>
                 <option value="Iran">Iran</option>
                 <option value="Jordanie">Jordanie</option>
                 <option value="Qatar">Qatar</option>
@@ -256,7 +278,7 @@
                 <option value="Turquie">Turquie</option>
                 </optgroup>
                 
-                 <optgroup label="Maghreb">
+                 <optgroup label="Maghreb" style="color:black;">
                   <option value="Maghreb">Maghreb</option>
                   <option value="Algerie">Algerie</option>
                   
@@ -271,7 +293,7 @@
                   
                 </optgroup>
                 
-                <optgroup label="Asie">
+                <optgroup label="Asie" style="color:green;">
                 	<option value="Chine">Chine</option>
                 	<option value="Corée_sudo">Corée du Sud</option>
                 	<option value="Inde">Inde</option>
@@ -285,7 +307,7 @@
                 	<option value="Thailande">Thailande</option>
                 	<option value="Vietnam">Vietnam</option>
                 </optgroup>
-                <optgroup label="Amérique">
+                <optgroup label="Amérique" style="color:blue;">
                    
                     <option value="Argentine">Argentine</option>
                     <option value="Bolivie">Bolivie</option>

@@ -88,8 +88,8 @@
     <div class="footer">
 	<div class="container">
 	        <div class="col-md-4 footer-four">
-		       <h5>Contact Us</h5>
-		       <p>Feel free to reach us</p>
+		       <h5>Nous Contacter</h5>
+		       <p>Envoie de votre courrier</p>
 		         <div class="foot-address">
 		          <ul>
                     <li><i class="fa fa-map-marker"></i>Place rouppe 234 1000 Bruxelles </li>
@@ -101,32 +101,33 @@
 		    </div>
 		   
 		    <div class="col-md-3 footer-two">
-		       <h5>Quick Links</h5>
+		       <h5>Fight Club Connection</h5>
 		          <ul>
-                    <li><a href="#"> About Us</a> </li>
-                    <li><a href="#"> Our News</a> </li>
-                    <li><a href="#"> Our Services</a> </li>
-                    <li><a href="#"> Contact Us</a> </li>
+                    <li><a href="#"> A propos de Fight Club Connection.</a> </li>
+                    <li><a href="#"> Presse.</a> </li>
+                    <li><a href="#"> Condition d'utisation.</a> </li>
+                    <li><a href="#"> Informations légales.</a> </li>
+                    <li><a href="#"> Protection des données.</a></li>
                   </ul>
                   
 		    </div>
 		    <div class="col-md-3 footer-three">
 		       <h5>Services</h5>
 		          <ul>
-                    <li><a href="#"> About Us</a> </li>
-                    <li><a href="#"> Our News</a> </li>
-                    <li><a href="#"> Our Services</a> </li>
+                    <li><a href="#"> Contact</a> </li>
+                    <li><a href="#"> Aide</a> </li>
+                    <li><a href="#"> Nos Services</a> </li>
                     <li><a href="#"> Contact Us</a> </li>
                   </ul>
                   
 		    </div>
 		    <div class="col-md-2 footer-one">
-		       <h5>Services</h5>
+		       <h5>Espace Pro</h5>
 		          <ul>
-                    <li><a href="#"> About Us</a> </li>
-                    <li><a href="#"> Our News</a> </li>
-                    <li><a href="#"> Our Services</a> </li>
-                    <li><a href="#"> Contact Us</a> </li>
+                    <li><a href="#"> Connexion</a> </li>
+                    <li><a href="#"> Inscription</a> </li>
+                    <li><a href="#"> Aide et informations</a> </li>
+                    <li><a href="#"> Contact</a> </li>
                   </ul>
                   
 		    </div>
