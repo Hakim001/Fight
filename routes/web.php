@@ -32,3 +32,15 @@ Route::get('/profil', 'profilController@profil')->name('profil')->middleware('au
 Route::get('/main', 'mainController@index2')->name('main');
 
 Route::get('/test', 'mainController@test')->name('test');
+
+Route::get('/library', array('as' => 'index', 'uses' =>'LibrariesController@etList'));
+
+Route::get('/library/createlibrary', array('as' => 'create_library_form', 'uses' => 'LibrariesController@getForm'));
+
+Route::post('/library/createlibrary', array('as' => 'create_album', 'uses' => 'LibrariesCobtroller@postCreate'));
+
+Route::get('/library/deletelibrary/{id}', array('as' => 'delete_library', 'uses' => 'LibrariesController@getDelete'));
+
+	
+Route::get('/library/library/{id}', array('as' => 'show_library', 'uses' => 'LibrariesContrller@getLibrarry'));	
+	

@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 class profilController extends Controller
 {
     public function profil(){
-        return view('profils.profil');
+		
+		$libraries = \App\Library::with('Photos')->get();
+        
+		return view('profils.profil');
     }
 }
