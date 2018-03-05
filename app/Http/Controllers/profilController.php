@@ -9,7 +9,7 @@ class profilController extends Controller
 {
     public function profil(){
 		
-		$libraries = library::with('Photos')->get();
+		
         
 		return view('profils.profil');
     }
