@@ -3,12 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\library;
 
 class profilController extends Controller
 {
     public function profil(){
 		
-		$libraries = \App\Library::with('Photos')->get();
+		$libraries = library::with('Photos')->get();
         
 		return view('profils.profil');
     }

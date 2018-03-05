@@ -3,20 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\library;
+use View;
+use Validator;
+use Redirect;
 
 class librariesController extends Controller
 {
     public function getList() {
 		
 		
-		$libraries = \App\library::Width('photos')->get();
+		$libraries = App\library::Width('photos')->get();
 		return View::make('index')->with('libraries', $libraries);
 		
 	}
 	
 	public function getLibrary($id)
 	{
-		$library = Library::width('Photos')->find($id);
+		$library = library::width('Photos')->find($id);
 		return view::make('library')->with('library', $library);
 		
 	}
@@ -46,7 +50,7 @@ class librariesController extends Controller
 		$filename = $random_name . '_cover.' .$extension;
 		$uploadSucess = Input::file('cover_image')->move($destinationPath, $filename);
 		
-		$library = \App\Library::create(array(
+		$library = library::create(array(
 		'name' => Input::get('name'),
 		'description' => Input::get('description'),
 		'cover_image' => $filename,
@@ -58,7 +62,7 @@ class librariesController extends Controller
 	
 	public function getDelete($id)
 	{
-		$library =\App\Library::find($id);
+		$library = library::find($id);
 		
 		$library->delete();
 		
