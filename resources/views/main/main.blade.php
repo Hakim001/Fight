@@ -2,7 +2,7 @@
   
 @extends('main')
 
-@section('carrousel')
+@section('content')
 
 
  <link rel="stylesheet" href="{{ asset('/css/main.css') }}">

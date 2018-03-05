@@ -1,7 +1,7 @@
 @extends('main')
 
 
-@section('recherche')
+@section('content')
 
 
   

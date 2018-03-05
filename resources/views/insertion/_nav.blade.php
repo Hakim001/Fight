@@ -1,9 +1,13 @@
- <nav class="navbar navbar-inverse">
+   <nav class="navbar navbar-inverse">
   <div class="container-fluid">
+   <div class="navbar-header" style="font-style:italic;">
+    <a class="navbar-brand" href="{{ route('main') }}">Fight Club Connection</a>
+  </div>
     <ul class="nav navbar-nav">
       <li> <a href="{{ route('main')}}">Accueil</a> </li>
       <li> <a href="#">Liens</a> </li>
-      <li> <a href="#">Livre d'or</a> </li>
+      <li> <a href="#">Boutique</a> </li>
+      <li><a href="{{ route('contact') }}">Contact</a></li>
      
     </ul>
     <div class="form-group">
@@ -38,6 +42,9 @@
            
         </div>    
     </div>
+    <br/>
     
   </div>
 </nav>
+<br/>
+<br/>
