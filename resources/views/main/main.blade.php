@@ -144,6 +144,7 @@
   	            <label class="col-md-1 control-label" for="age">Age :</label>
   	             <div class="col-md-2">
   		           <select id="age" name="age" class="form-control">
+  			     <option value="&lt12">&LT 12</option>
   			     <option value="12">12</option>
   			     <option value="13">13</option>
   			     <option value="14">14</option>
@@ -208,6 +209,7 @@
   			     <option value="73">73</option>
   			     <option value="74">74</option>
   			     <option value="75">75</option>
+  			     <option value="&gt75">&GT 75</option>
   			 </select>
   	             </div>
              </div> 
