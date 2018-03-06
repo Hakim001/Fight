@@ -11,14 +11,6 @@
 |
 */
 
-//Route::get('/', function () { 
-    //return view('welcome');
-//});
-
-//Route::get('/main', function () {
- //   return view('main');
-//})->name('main');
-
 Route::get('/contact', 'mainController@contact')->name('contact');
 
 Route::get('/main1', 'mainController@index')->name('main1');
@@ -32,4 +24,10 @@ Route::get('/profil', 'profilController@profil')->name('profil')->middleware('au
 Route::get('/', 'mainController@index2')->name('main');
 
 Route::get('/test', 'mainController@test')->name('test');
+
+Route::middleware('auth')->group(function () {
+    Route::resource('image', 'ImageController', [
+        'only' => ['create', 'store', 'destroy']
+    ]);
+});
 

@@ -4,11 +4,24 @@
 @extends('main')
 
 @section('content')
+
+@include('insertion._script_profil')
  
- <link rel="stylesheet" href="{{ asset('/css/profil.css') }}">
  
- <h3>profil : {{ Auth::user()->name }}.</h3>
-@endsection
+ 
+ <h3>profil : {{ Auth::user()->name }}</h3>
+ 
+ <a href="{{ route('image.create') }}" class="btn btn-primary"><span class="glyphicon glyphicon-picture"></span>@lang('profil.img_btn') </a>
+ 
+ @endsection
+ 
+ 
+ 
+
+ 
+ 
+ 
+  
 
 
 
