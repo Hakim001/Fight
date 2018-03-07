@@ -1,0 +1,28 @@
+#photoprofil
+{ 
+	border-radius: 65px;
+	
+	
+}
+
+#nomprofil
+{
+	text-decoration: underline;
+	font-family: 'Patua One', cursive;
+	text-decoration-color: brown;
+	font-style: italic;
+	color: navy;
+
+	
+}
+
+h4 {
+	color:black;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+p {
+	color: darkorange;
+}
+

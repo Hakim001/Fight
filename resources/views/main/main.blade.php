@@ -81,6 +81,7 @@
           <select id="sport" name="sport" class="form-control">
          
              <optgroup label="Sport de combat">
+           <option value="tous"></option>
            <option value="anglaise">Boxe Anglaise</option>
            <option value="thai">Boxe Thai</option>
            <option value="française">Boxe Française</option>
@@ -127,6 +128,7 @@
            <div class="col-md-2">
              
                <select id="niveau" name="niveau" class="form-control">
+                <option value="tous"></option>
                 <option value="amateur">Amateur</option>
                 <option value="professionel">Professionel</option>
                 <option value="sparing_partner_pro">Spa-ring partner pro</option>
@@ -144,6 +146,8 @@
   	            <label class="col-md-1 control-label" for="age">Age :</label>
   	             <div class="col-md-2">
   		           <select id="age" name="age" class="form-control">
+  		           
+  		         <option value="tous"></option>
   			     <option value="&lt12">&LT 12</option>
   			     <option value="12">12</option>
   			     <option value="13">13</option>
@@ -153,7 +157,7 @@
   			     <option value="17">17</option>
   			     <option value="18">18</option>
   			     <option value="19">19</option>
-  			     <option value="20" selected>20</option>
+  			     <option value="20">20</option>
   			     <option value="21">21</option>
   			     <option value="22">22</option>
   			     <option value="23">23</option>
@@ -241,6 +245,7 @@
                <label class="col-md-1 control-label" for="poids">Poids :</label>
                 <div class="col-md-2">
                   <select id="poids" name="poids" class="form-control">
+                     <option value="tous"></option>
                      <option value="&lt50kg">&LT 50kg</option>
                      <option value="50_53kg">50 - 53KG</option>
                      <option value="53_56kg">53 - 56kg</option>
@@ -262,6 +267,7 @@
                <label class="col-md-1 control-label" for="sexe">Sexe :</label>
                  <div class="col-md-2">
                    <select id="sexe" name="sexe" class="form-control">
+             	      <option value="tous"></option>
               	      <option value="M">Homme</option>
               	      <option value="F">Femme</option>
                    </select>
@@ -406,6 +412,7 @@
             <label for="plan" class="control-label col-md-1">plan :</label>
               <div class="col-md-2">
                 <select name="plan" id="plan" class="form-control">
+                   <option value="tous"></option>
                    <option value="non_paye">non-payé</option>
                    <option value="paye">payé</option>
                 </select>
@@ -417,6 +424,7 @@
            <label for="taille" class="control-label col-md-1">taille :</label>
               <div class="col-md-2">
                  <select name="taille" id="taille" class="form-control">
+          	        <option value="tous"></option>
            	        <option value="&lt 1.30">&lt 1,30</option>
            		    <option value="1.30">1,30</option>
            		    <option value="1.31">1,31</option>
@@ -465,7 +473,7 @@
 				    <option value="1.74">1,74</option>
 				    <option value="1.75">1,75</option>
 				    <option value="1.76">1,76</option>
-				    <option value="1.77" selected>1,77</option>
+				    <option value="1.77">1,77</option>
 				    <option value="1.78">1,78</option>
 				    <option value="1.79">1,79</option>
 				    <option value="1.80">1,80</option>

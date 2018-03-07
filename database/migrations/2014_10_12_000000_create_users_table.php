@@ -23,6 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('username', 110)->unique();
 			$table->binary('image')->nullable();
 			$table->string('name_image')->nullable();
+			$table->text('description')->nullable();
             $table->rememberToken();
             $table->timestamps();
             $table->timestamp('activated_at')->nullable();

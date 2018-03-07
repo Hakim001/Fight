@@ -7,7 +7,23 @@
 
 @include('insertion._script_profil')
 
-<h3>profil : {{ Auth::user()->name }}</h3>
+
+<h3 id="nomprofil">{{ Auth::user()->name }} : </h3>
+ 
+ <img id="photoprofil" src="{{ Auth::user()->image }}" width="260" height="350"/>
+ 
+ <br/>
+ <div class="container">
+ <div class="row">
+ 
+ <h4 class="col-md-offset-2 col-md-8">{{ Auth::user()->name_image }} : </h4>
+ <br/>
+ <p class="col-md-offset-2 col-md-8">{{ Auth::user()->description }}</p>
+ 
+ </div>
+ 	
+ </div>
+ <br/>
 
  
 <div class="span3 well">

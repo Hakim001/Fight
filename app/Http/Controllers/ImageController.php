@@ -49,11 +49,11 @@ class ImageController extends Controller
 		
 		DB::table('users')
             ->where('id', $id)
-            ->update(array('image' => $request->image, 'name_image' => $request->name_image));
+            ->update(array('image' => $request->image, 'name_image' => $request->name_image, 'description' => $request->description));
 		
 		
 		
-		return view('profils.profil');
+		return redirect()->back();
     }
 
     /**

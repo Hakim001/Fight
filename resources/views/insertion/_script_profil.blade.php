@@ -1,2 +1,2 @@
- <link rel="stylesheet" href="{{ asset('/css/profil.css') }}">
+ <link rel="stylesheet" href="{{ asset('/css/profilauth.css') }}">
  

@@ -24,3 +24,21 @@ body{
 	font-weight: bolder;
 	font-size: 5em;
 }
+
+#photoprofil
+{ 
+	border-radius: 25px;
+	
+	
+}
+
+#nomprofil
+{
+	text-decoration: underline;
+	font-family: 'Patua One', cursive;
+	text-decoration-color: brown;
+	font-style: italic;
+
+	
+}
+

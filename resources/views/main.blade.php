@@ -1,6 +1,8 @@
 
    
    @include('insertion._doctype')
+   
+   <link href="{{asset('/css/profil.css')}}" rel="stylesheet">
     
     <body>
     
