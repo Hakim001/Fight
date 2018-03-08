@@ -6,8 +6,6 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests\ImageRequest;
 
-use App\Repositories\ImageRepository;
-
 use User;
 
 use Auth;
@@ -17,21 +15,14 @@ use DB;
 class ImageController extends Controller
 {
 	
-	protected $repository;
+	
     /**
      * Create a new ImageController instance.
      *
      * @param  \App\Repositories\ImageRepository $repository
      */
-    public function __construct(ImageRepository $repository)
-    {
-        $this->repository = $repository;
-    }
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+   
+    
     public function index()
     {
         //
@@ -55,7 +46,7 @@ class ImageController extends Controller
      */
     public function store(Request $request)
     {
-       /* $id = Auth::user()->id;
+        $id = Auth::user()->id;
 		
 		//dd($request);
 		
@@ -67,19 +58,7 @@ class ImageController extends Controller
 		
 		
 		return redirect()->back();
-    
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-		
-		$this->repository->store($request);
-		
-		
-    return back()->with('ok', __("L'image a bien été enregistrée"));
+	
 		
 	}
 		

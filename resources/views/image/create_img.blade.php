@@ -1,7 +1,7 @@
 @extends('main')
 
 
-
+ 
 
 @section('content')
 
@@ -24,6 +24,9 @@
  	
  </div>
  <br/>
+ 
+ 
+    
 
  
 <div class="span3 well">
