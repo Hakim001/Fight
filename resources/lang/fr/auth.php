@@ -14,13 +14,13 @@ return [
     */
 
     'failed' => 'These credentials do not match our records.',
-    'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
-	'address' => 'E-mail Address',
-	'password' => 'Password',
-	'passwordConfirm' => 'Confirm Password',
-	'name' => 'Name ',
-	'username' => 'Username ',
-	'register' => 'Register ',
-	'submit' => 'Submit',
+    'throttle' => 'Trop de tentative de Login. S.V.P, essayez encore dans :seconds seconds.',
+	'address' => 'Adresse E-mail',
+	'password' => 'Mot de passe',
+	'passwordConfirm' => 'Confirmation Mot de Passe ',
+	'name' => 'Nom ',
+	'username' => 'Pseudo ',
+	'register' => 'S\'enregistrer ',
+	'submit' => 'Soumettre',
 
 ];

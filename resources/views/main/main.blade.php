@@ -546,7 +546,7 @@
               <!-- bouton submit -->
              
                 <div class="col-md-offset-2 col-md-3">
-                <button id="submit1" name="submit1" class="btn btn-primary">Submit</button>
+                <button id="submit1" name="submit1" class="btn btn-primary">@lang('auth.submit')</button>
                 </div>
                
                <!-- lien recherche avancée -->
@@ -1099,7 +1099,7 @@
               <!-- bouton submit -->
              
                 <div class="col-md-offset-2 col-md-3">
-                <button id="submit1" name="submit1" class="btn btn-primary">Submit</button>
+                <button id="submit1" name="submit1" class="btn btn-primary"> @lang('auth.submit') </button>
                 </div>
                
                <!-- lien recherche avancée -->

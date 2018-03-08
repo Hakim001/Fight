@@ -30,7 +30,7 @@
      
       <legend> @lang('profil.titre_profil') </legend>
       
-    <form accept-charset="UTF-8"  action="{{ route('image.store') }}" method="post">
+    <form accept-charset="UTF-8"  action="{{ route('image.store') }}" method="post" enctype="multipart/form-data">
         
         {{csrf_field()}}
         
@@ -47,7 +47,7 @@
         
         <br/>
         
-        <button class="btn btn-primary" type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> Submit</button>
+        <button class="btn btn-primary" type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> @lang('auth.submit')</button>
    
      </form>
 </div>
