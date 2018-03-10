@@ -10,7 +10,7 @@
 
 <h3 id="nomprofil">{{ Auth::user()->name }} : </h3>
  
- <img id="photoprofil" src="{{ Auth::user()->image }}" width="260" height="350"/>
+ <img id="photoprofil" src="{{ Auth::user()->image }}" width="260" height="350" alt="@lang('profil.alt_img1')"/>
  
  <br/>
  <div class="container">

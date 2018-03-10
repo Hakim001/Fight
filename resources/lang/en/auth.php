@@ -22,5 +22,9 @@ return [
 	'username' => 'Username ',
 	'register' => 'Register ',
 	'submit' => 'Submit',
+	'pwd_oublie' => 'Forgot Password ?',
+	'remember' => 'Remember me',
+	'login' => 'Login',
+	'register_title' => 'Register ',
 
 ];

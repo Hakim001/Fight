@@ -8,5 +8,6 @@ return [
 	'label_img' => ' Title : ',
 	'label_description' => 'Description ',
 	'text_descritption' => 'Enter your description',
+	'alt_img1' => 'There is a problem with picture',
 	
 ];

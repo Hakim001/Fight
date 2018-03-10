@@ -22,5 +22,9 @@ return [
 	'username' => 'Pseudo ',
 	'register' => 'S\'enregistrer ',
 	'submit' => 'Soumettre',
+	'pwd_oublie' => 'Oublié votre mot de passe ?',
+	'remember' => 'Se souvenir de moi',
+	'login' => 'Se Connecter',
+	'register_title' => 'Inscription ',
 
 ];
