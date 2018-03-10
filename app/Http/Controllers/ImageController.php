@@ -10,6 +10,8 @@ use User;
 
 use Auth;
 
+use App\Image;
+ 
 use DB;
 
 class ImageController extends Controller
@@ -50,12 +52,22 @@ class ImageController extends Controller
 		
 		//dd($request);
 		
+			$image = Image::create()
+			->addMedia($request->file('picture'))
+			->preservingOriginal()
+			->toMediaCollection();
+		
+		//dd($image);
+		
 		
 		DB::table('users')
             ->where('id', $id)
-            ->update(array('image' => $request->image, 'name_image' => $request->name_image, 'description' => $request->description));
+            ->update(array('image'=> $image, 'name_image' => $request->name_image, 'description' => $request->description));
 		
 		
+		//$newsItem = Image::find(1);
+		
+		//$newsItem->addMedia($request->file('picture'))->toMediaCollection('picture');
 		
 		return redirect()->back();
 	

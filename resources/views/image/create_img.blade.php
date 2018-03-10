@@ -37,7 +37,7 @@
         
         {{csrf_field()}}
         
-		<input class="span3" type="file" id="image" name="image" required> 
+		<input class="span3" type="file" id="picture" name="picture" required> 
         <br/>
         <label> @lang('profil.label_img')
         <input class="span3" name="name_image" id="name_image" type="text" required>

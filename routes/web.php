@@ -31,3 +31,13 @@ Route::middleware('auth')->group(function () {
     ]);
 }); 
 
+use App\Image;
+
+Route::get('/1', function() {
+	Image::create()
+			->addMedia(storage_path('picture/Aikido.jpg'))
+			->preservingOriginal()
+			->toMediaCollection();
+		
+});
+
