@@ -9,5 +9,6 @@ return [
 	'label_description' => ' Description ',
 	'text_descritption' => 'Entrez votre texte',
 	'alt_img1' => 'Il y a un problème avec l\'image',
+	'description' => 'Mettez votre description, ici',
 	
 ];

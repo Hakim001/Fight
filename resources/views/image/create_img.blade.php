@@ -8,18 +8,30 @@
 @include('insertion._script_profil')
 
 
-<h3 id="nomprofil">{{ Auth::user()->name }} : </h3>
+<h3 id="nomprofil">{{ Auth::user()->name }} </h3>
+ @if ( Auth::user()->image === NULL )
+ <img id="photoprofil" src="{{asset('storage/default.jpg')}}" width="400" height="320" alt="@lang('profil.alt_img1')"/>
+ @else
  
- <img id="photoprofil" src="{{ Auth::user()->image }}" width="260" height="350" alt="@lang('profil.alt_img1')"/>
+ <img id="photoprofil" src="{{asset('storage/avatars/'. Auth::user()->id)}}" width="400" height="320" alt="@lang('profil.alt_img1')"/>
+ @endif
  
  <br/>
  <div class="container">
  <div class="row">
  
- <h4 class="col-md-offset-2 col-md-8">{{ Auth::user()->name_image }} : </h4>
+ <h4 class="col-md-offset-2 col-md-8">{{ Auth::user()->name_image }} </h4>
  <br/>
- <p class="col-md-offset-2 col-md-8">{{ Auth::user()->description }}</p>
+ @if ( Auth::user()->description === NULL )
  
+ <p class="col-md-offset-2 col-md-8">@lang('profil.description')</p>
+ 
+ @else
+ 
+ <p class="col-md-offset-2 col-md-8">{{  Auth::user()->description }}</p>
+ 
+ @endif
+  
  </div>
  	
  </div>

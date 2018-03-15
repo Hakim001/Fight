@@ -79,9 +79,8 @@
          <div class="col-md-2">
          
           <select id="sport" name="sport" class="form-control">
-         
-             <optgroup label="Sport de combat">
            <option value="tous"></option>
+         <optgroup label="Sport de combat">
            <option value="anglaise">Boxe Anglaise</option>
            <option value="thai">Boxe Thai</option>
            <option value="française">Boxe Française</option>

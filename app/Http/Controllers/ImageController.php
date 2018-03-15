@@ -6,13 +6,12 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests\ImageRequest;
 
-use User;
-
 use Auth;
+ use DB;
+use Illuminate\Support\Facades\Storage;
 
-use App\Image;
- 
-use DB;
+use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
+use Spatie\MediaLibrary\HasMedia\Interfaces\HasMedia;
 
 class ImageController extends Controller
 {
@@ -37,7 +36,18 @@ class ImageController extends Controller
      */
     public function create()
     {
-        return view('image.create_img');
+		$id = Auth::user()->id;
+		
+				//dd($photo);
+		//$image = Image::last()->getMedia()->first()->getpath();
+		
+		//$images = Storage::get('app/public/avatar_def.jpg');
+		//$photo = Storage::
+		//$images = App\Image::last()->getMedia()->all();
+		
+		//dd($image, $images);
+	
+        return view('image.create_img',compact('images') );
     }
 
     /**
@@ -49,27 +59,51 @@ class ImageController extends Controller
     public function store(Request $request)
     {
         $id = Auth::user()->id;
+	    $photo = \App\Image::find($id);
 		
-		//dd($request);
+	    $path = $request->file('picture')->storeAs(
+    'public/avatars', $request->user()->id
+);
+
+        
+    
+   
 		
-			$image = Image::create()
-			->addMedia($request->file('picture'))
-			->preservingOriginal()
-			->toMediaCollection();
+//	\App\Image::create()
+//   ->addMediafromRequest('picture')
+//   ->preservingOriginal()
+//   ->toMediaCollection('profil')
+//   ->newsItem;	
 		
-		//dd($image);
+		//$photo = User::image();
+		//Image::create()
+			//->addMediaFromRequest('picture')
+			//->preservingOriginal()
+			//->toMediaCollection('photo_profil');
+		//->addMedia($request->file('picture'))
+		
+		
+		
+	//$mediaItems = $newsItem->getMedia();
+		
+		//dd($mediaItems);
+  
+		//$OnDisk = $media[0]->getPath();
+		 
 		
 		
 		DB::table('users')
-            ->where('id', $id)
-            ->update(array('image'=> $image, 'name_image' => $request->name_image, 'description' => $request->description));
+          ->where('id', $id)
+          ->update(['image' => $request->picture ,'name_image' => $request->name_image, 'description' => $request->description]);
 		
 		
-		//$newsItem = Image::find(1);
+		//$users = User::all();
 		
-		//$newsItem->addMedia($request->file('picture'))->toMediaCollection('picture');
-		
+		//$photos = Image::all();
+		//return $path;
 		return redirect()->back();
+		
+		// return view('image.create_img', compact('media','OnDisk','photos'));
 	
 		
 	}

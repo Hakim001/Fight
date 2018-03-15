@@ -9,13 +9,13 @@ use Spatie\MediaLibrary\HasMedia\Interfaces\HasMedia;
 
 class Image extends Model implements hasMedia
 {
-    use HasMediaTrait;
+    use HasMediaTrait; 
 	
 	
-	/*protected $fillable = [
-        'id', 'user_id', 'picture', 
+	protected $fillable = [
+        'id', 'user_id', 'picture', 'name_image', 'description', 
     ];
-	*/
+	
 	
 	public static function last()
 	{
