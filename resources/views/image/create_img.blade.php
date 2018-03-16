@@ -7,49 +7,29 @@
 
 @include('insertion._script_profil')
 
+@include('insertion._photo_profil')
 
-<h3 id="nomprofil">{{ Auth::user()->name }} </h3>
- @if ( Auth::user()->image === NULL )
- <img id="photoprofil" src="{{asset('storage/default.jpg')}}" width="400" height="320" alt="@lang('profil.alt_img1')"/>
- @else
- 
- <img id="photoprofil" src="{{asset('storage/avatars/'. Auth::user()->id)}}" width="400" height="320" alt="@lang('profil.alt_img1')"/>
- @endif
- 
- <br/>
- <div class="container">
- <div class="row">
- 
- <h4 class="col-md-offset-2 col-md-8">{{ Auth::user()->name_image }} </h4>
- <br/>
- @if ( Auth::user()->description === NULL )
- 
- <p class="col-md-offset-2 col-md-8">@lang('profil.description')</p>
- 
- @else
- 
- <p class="col-md-offset-2 col-md-8">{{  Auth::user()->description }}</p>
- 
- @endif
+
   
- </div>
- 	
- </div>
+ 
  <br/>
  
  
     
-
+<div>
+<br/>
  
 <div class="span3 well">
-     
+     <div class="col-md-12">
       <legend> @lang('profil.titre_profil') </legend>
-      
+	</div>
+      <br/>
+      <div class="row">
     <form accept-charset="UTF-8"  action="{{ route('image.store') }}" method="post" enctype="multipart/form-data">
         
         {{csrf_field()}}
         
-		<input class="span3" type="file" id="picture" name="picture" required> 
+		<input  type="file" id="picture" name="picture" required>  <span class="help-block">@lang('profil.help')</span>
         <br/>
         <label> @lang('profil.label_img')
         <input class="span3" name="name_image" id="name_image" type="text" required>
@@ -65,6 +45,8 @@
         <button class="btn btn-primary" type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> @lang('auth.submit')</button>
    
      </form>
+</div>
+</div>
 </div>
                       
                

@@ -2,7 +2,7 @@
 
 return [
 	
-	'img_btn' => ' Ajouter une image',
+	'img_btn' => ' Changer Profil',
 	'img_btn1' => ' Envoyer l\'image',
 	'titre_profil' => ' Créer Votre Image De Profil',
 	'label_img' => ' Titre : ',
@@ -10,5 +10,8 @@ return [
 	'text_descritption' => 'Entrez votre texte',
 	'alt_img1' => 'Il y a un problème avec l\'image',
 	'description' => 'Mettez votre description, ici',
+	'nav_pro' => 'Votre profil',
+	'nav_dec' => 'Déconnecter',
+	'help' => 'Introduire image de profil',
 	
 ];

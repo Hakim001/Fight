@@ -38,16 +38,19 @@ class ImageController extends Controller
     {
 		$id = Auth::user()->id;
 		
-				//dd($photo);
-		//$image = Image::last()->getMedia()->first()->getpath();
+		$path = DB::table('users')
+		->where('id', $id)
+		->select('image')
+		->get();	
 		
-		//$images = Storage::get('app/public/avatar_def.jpg');
+		
+		//Storage::get('app/public/avatar_def.jpg');
 		//$photo = Storage::
 		//$images = App\Image::last()->getMedia()->all();
 		
 		//dd($image, $images);
 	
-        return view('image.create_img',compact('images') );
+        return view('image.create_img', compact('path','contents', 'id') );
     }
 
     /**
@@ -61,13 +64,27 @@ class ImageController extends Controller
         $id = Auth::user()->id;
 	    $photo = \App\Image::find($id);
 		
-	    $path = $request->file('picture')->storeAs(
+	   $path = $request->file('picture')->storeAs(
     'public/avatars', $request->user()->id
 );
+ 
+    $contents = Storage::get('public/avatars/'.$request->user()->id);
+		
+		$user = Auth::user();
+		$user->contents;
+		$user->save;
+   DB::table('users')
+          ->where('id', $id)
+          ->update(['image'=>$path, 'name_image' => $request->name_image, 'description' => $request->description]);
+		/*if($request->hasFile('picture')){
+    		$avatar = $request->file('picture');
+    		$filename = time() . '.' . $avatar->getClientOriginalExtension();
+    		Image::make($avatar)->resize(300, 300)->save( public_path('/avatars/' . $filename ) );
 
-        
-    
-   
+    		$user = Auth::user();
+    		$user->avatar = $filename;
+    		$user->save();
+		*/
 		
 //	\App\Image::create()
 //   ->addMediafromRequest('picture')
@@ -75,35 +92,24 @@ class ImageController extends Controller
 //   ->toMediaCollection('profil')
 //   ->newsItem;	
 		
-		//$photo = User::image();
-		//Image::create()
-			//->addMediaFromRequest('picture')
-			//->preservingOriginal()
-			//->toMediaCollection('photo_profil');
-		//->addMedia($request->file('picture'))
 		
 		
 		
-	//$mediaItems = $newsItem->getMedia();
 		
-		//dd($mediaItems);
-  
-		//$OnDisk = $media[0]->getPath();
+	
 		 
 		
 		
-		DB::table('users')
-          ->where('id', $id)
-          ->update(['image' => $request->picture ,'name_image' => $request->name_image, 'description' => $request->description]);
+		
 		
 		
 		//$users = User::all();
 		
 		//$photos = Image::all();
 		//return $path;
-		return redirect()->back();
+		//return redirect()->back();
 		
-		// return view('image.create_img', compact('media','OnDisk','photos'));
+		return redirect()->route('profil');
 	
 		
 	}
