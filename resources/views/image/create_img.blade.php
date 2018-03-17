@@ -29,10 +29,12 @@
         
         {{csrf_field()}}
         
-		<input  type="file" id="picture" name="picture" required>  <span class="help-block">@lang('profil.help')</span>
+        <input  type="file" id="emoji" name="emoji">  <span class="help-block">@lang('profil.help')</span>
+        <br/>
+		<input  type="file" id="picture" name="picture">  <span class="help-block">@lang('profil.help1')</span>
         <br/>
         <label> @lang('profil.label_img')
-        <input class="span3" name="name_image" id="name_image" type="text" required>
+        <input class="span3" name="name_image" id="name_image" type="text">
 		</label>
         
         <br/>

@@ -38,19 +38,8 @@ class ImageController extends Controller
     {
 		$id = Auth::user()->id;
 		
-		$path = DB::table('users')
-		->where('id', $id)
-		->select('image')
-		->get();	
 		
-		
-		//Storage::get('app/public/avatar_def.jpg');
-		//$photo = Storage::
-		//$images = App\Image::last()->getMedia()->all();
-		
-		//dd($image, $images);
-	
-        return view('image.create_img', compact('path','contents', 'id') );
+        return view('image.create_img' );
     }
 
     /**
@@ -64,18 +53,75 @@ class ImageController extends Controller
         $id = Auth::user()->id;
 	    $photo = \App\Image::find($id);
 		
-	   $path = $request->file('picture')->storeAs(
-    'public/avatars', $request->user()->id
-);
- 
-    $contents = Storage::get('public/avatars/'.$request->user()->id);
+		$image = DB::table('users')
+          ->where('id', $id)
+		  ->select('image')
+		  ->get();
 		
-		$user = Auth::user();
-		$user->contents;
+		$name_image = DB::table('users')
+          ->where('id', $id)
+		  ->select('name_image')
+		  ->get();
+		
+		$descriptione = DB::table('users')
+          ->where('id', $id)
+		  ->select('description')
+		  ->get();
+		
+	if($request->file('picture') !== Null)
+	{
+		 DB::table('users')
+          ->where('id', $id)
+		  ->delete('image');
+	   $path = $request->file('picture')->storeAs(
+    'public/avatars/', $request->user()->id);
+		
+	}
+	 if($image !== Null)
+	{	 
+      $contents = Storage::get('public/avatars/'.$request->user()->id);
+		  $path ='public/avatars/'.$request->user()->id;
+		 
+	    $user = Auth::user();
+		
+		 $user->contents;
+		
+		
 		$user->save;
+	}
+		
+	if ($request->name_image === NULL)
+	{
+		if($name_image === NULL)
+		{
+			$titre = 'Avatar';
+		
+		}
+		
+		else
+			$titre = 'Avatar';
+	}
+		
+	elseif ($request->name_image !== NULL)
+	{
+	  $titre = $request->name_image;
+		
+	}
+	
+    if ($request->description === NULL)	
+	{
+		$description = '';
+	}
+	elseif ($request->description !== NULL)
+	{
+		$description = $request->description;
+	}
+		
+		
    DB::table('users')
           ->where('id', $id)
-          ->update(['image'=>$path, 'name_image' => $request->name_image, 'description' => $request->description]);
+          ->update(['image'=>$path, 'name_image' => $titre, 'description' => $description]);
+		
 		/*if($request->hasFile('picture')){
     		$avatar = $request->file('picture');
     		$filename = time() . '.' . $avatar->getClientOriginalExtension();
@@ -85,29 +131,6 @@ class ImageController extends Controller
     		$user->avatar = $filename;
     		$user->save();
 		*/
-		
-//	\App\Image::create()
-//   ->addMediafromRequest('picture')
-//   ->preservingOriginal()
-//   ->toMediaCollection('profil')
-//   ->newsItem;	
-		
-		
-		
-		
-		
-	
-		 
-		
-		
-		
-		
-		
-		//$users = User::all();
-		
-		//$photos = Image::all();
-		//return $path;
-		//return redirect()->back();
 		
 		return redirect()->route('profil');
 	

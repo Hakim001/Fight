@@ -22,7 +22,8 @@ class CreateUsersTable extends Migration
             $table->string('password', 110);
             $table->string('username', 110)->unique();
 			$table->binary('image')->nullable();
-			$table->string('name_image')->default('Avatar');
+			$table->binary('emoji')->nullable();
+			$table->string('name_image')->nullable();
 			$table->text('description')->nullable();
             $table->rememberToken();
             $table->timestamps();

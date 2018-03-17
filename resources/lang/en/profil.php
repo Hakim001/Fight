@@ -12,5 +12,6 @@ return [
 	'description' => 'Put your description, here',
 	'nav_pro' => 'Your profil',
 	'nav_dec' => 'Logout',
-	'help' => 'Introduse you profil picture',
+	'help' => 'Introduse your emoji',
+	'help1' => 'Introduse your profil picture',
 ];

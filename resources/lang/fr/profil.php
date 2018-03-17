@@ -12,6 +12,7 @@ return [
 	'description' => 'Mettez votre description, ici',
 	'nav_pro' => 'Votre profil',
 	'nav_dec' => 'Déconnecter',
-	'help' => 'Introduire image de profil',
+	'help' => 'Introduire votre emoji',
+	'help1' => 'Introduire image de profil',
 	
 ];
