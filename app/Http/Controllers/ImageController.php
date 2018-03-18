@@ -88,16 +88,6 @@ class ImageController extends Controller
 	    $user->path;
 	    $user->save;
 		
-		
-		
-  //$contents = Storage::get('public/avatars/'.$request->user()->id);
-		  //$path ='public/avatars/'.$request->user()->id;
-		 
-		
-	    
-		//$path = $contents;
-		
-		
 	}
 		
 	if ($request->name_image === NULL)
