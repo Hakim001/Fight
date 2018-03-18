@@ -18,7 +18,12 @@
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
-                                    <img src="{{ asset('storage/emoji.jpg')}}" width="33" height="25"> {{ Auth::user()->name }} <span class="caret"></span>
+                                   @if(Auth::user()->emoji === NULL)
+                                    <img src="{{ asset('storage/emoji.jpg')}}" width="33" height="25">
+                                    @else 
+                                    <img src="{{ asset('storage/emojis/'. Auth::user()->id)}}" width="33" height="25">
+                                    @endif
+                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
                                 <ul class="dropdown-menu">

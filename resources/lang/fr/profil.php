@@ -14,5 +14,6 @@ return [
 	'nav_dec' => 'Déconnecter',
 	'help' => 'Introduire votre emoji',
 	'help1' => 'Introduire image de profil',
+	'info_pers' => 'Info perso',
 	
 ];

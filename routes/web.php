@@ -21,6 +21,13 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/profil', 'profilController@profil')->name('profil')->middleware('auth');
 
+Route::group(['middleware' => 'auth'], function (){
+	
+	Route::get('/Info', 'InfopersoController@index')->name('info.index');
+	
+});
+
+
 Route::get('/', 'mainController@index2')->name('main');
 
 Route::get('/test', 'mainController@test')->name('test');

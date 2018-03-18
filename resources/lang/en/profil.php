@@ -14,4 +14,5 @@ return [
 	'nav_dec' => 'Logout',
 	'help' => 'Introduse your emoji',
 	'help1' => 'Introduse your profil picture',
+	'info_pers' => 'Info perso',
 ];

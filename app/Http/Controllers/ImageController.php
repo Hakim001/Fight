@@ -62,65 +62,110 @@ class ImageController extends Controller
           ->where('id', $id)
 		  ->select('name_image')
 		  ->get();
-		
+		//dd($name_image);
 		$descriptione = DB::table('users')
           ->where('id', $id)
 		  ->select('description')
 		  ->get();
 		
-	if($request->file('picture') !== Null)
+		$emojis = DB::table('users')
+		->select('emoji')
+		->get();
+		
+	if($request->file('picture') !== NULL)
 	{
-		 DB::table('users')
-          ->where('id', $id)
-		  ->delete('image');
-	   $path = $request->file('picture')->storeAs(
+		
+	//$contents = Storage::get('public/avatars/'.$request->user()->id);
+	   
+		 $path = $request->file('picture')->storeAs(
     'public/avatars/', $request->user()->id);
+			
+			DB::table('users')
+          ->where('id', $id)
+		  ->update(['image' => $path]);
 		
-	}
-	 if($image !== Null)
-	{	 
-      $contents = Storage::get('public/avatars/'.$request->user()->id);
-		  $path ='public/avatars/'.$request->user()->id;
+		$user = Auth::user();
+	    $user->path;
+	    $user->save;
+		
+		
+		
+  //$contents = Storage::get('public/avatars/'.$request->user()->id);
+		  //$path ='public/avatars/'.$request->user()->id;
 		 
-	    $user = Auth::user();
 		
-		 $user->contents;
+	    
+		//$path = $contents;
 		
 		
-		$user->save;
 	}
 		
 	if ($request->name_image === NULL)
 	{
-		if($name_image === NULL)
+		if($name_image !== NULL)
 		{
-			$titre = 'Avatar';
+			$titre = Auth::user()->name_image;
 		
 		}
 		
 		else
+		{
 			$titre = 'Avatar';
+		}
+		DB::table('users')
+          ->where('id', $id)
+		  ->update(['name_image' => $titre]);
+		
 	}
 		
 	elseif ($request->name_image !== NULL)
 	{
 	  $titre = $request->name_image;
 		
+		DB::table('users')
+          ->where('id', $id)
+		  ->update(['name_image' => $titre]);
+		
 	}
 	
     if ($request->description === NULL)	
 	{
-		$description = '';
+		if($descriptione !== NULL)
+		{
+		 $description = Auth::user()->description;
+			
+			DB::table('users')
+          ->where('id', $id)
+		  ->update(['description' => $description]);
+		}
+		
 	}
 	elseif ($request->description !== NULL)
 	{
 		$description = $request->description;
+		DB::table('users')
+          ->where('id', $id)
+		  ->update(['description' => $description]);
+	}
+	
+	if ($request->file('emoji') !== NULL)
+	{
+		$path = $request->file('emoji')->storeAs(
+    'public/emojis/', $request->user()->id);
+		
+		DB::table('users')
+			->Where('id', $id)
+			->update(['emoji' => $path]);
+		
+		$user = Auth::user();
+	    $user->path;
+	    $user->save;
 	}
 		
 		
-   DB::table('users')
+   /*DB::table('users')
           ->where('id', $id)
-          ->update(['image'=>$path, 'name_image' => $titre, 'description' => $description]);
+          ->update(['name_image' => $titre, 'description' => $description]);
 		
 		/*if($request->hasFile('picture')){
     		$avatar = $request->file('picture');
@@ -131,11 +176,13 @@ class ImageController extends Controller
     		$user->avatar = $filename;
     		$user->save();
 		*/
+		//save();
 		
 		return redirect()->route('profil');
 	
 		
 	}
+	
 		
     public function show($id)
     {
