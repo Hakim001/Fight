@@ -31,7 +31,7 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $hidden = [ 
+    protected $hidden = [   
         'password', 'remember_token',
     ];
 	
@@ -39,6 +39,12 @@ class User extends Authenticatable
 	{
 		return $this->hasOne('App\Image');
 	}
+	
+	public function profil()
+	{
+		return $this->hasOne('App\profil');
+	}
+	
 	
     
 }
